@@ -21,6 +21,25 @@ function generatePassword() {
   else break;
   
  }
+ while (1) {
+  var special = window.confirm("Include special characters?");
+  var numbers = window.confirm("... Numeric charachers?");
+  var uppercase = window.confirm("... Uppercase letters?");
+  var lowercase = window.confirm("... or Lowercase characters?");
+  console.log(special);
+  console.log(numbers);
+  console.log(uppercase);
+  console.log(lowercase);
+
+  
+  if (special || numbers || uppercase || lowercase) {
+    console.log("!!!!");
+    break;
+  }
+  else {
+    window.alert("You must select at least one character type");
+  }
+}
 
 
 
