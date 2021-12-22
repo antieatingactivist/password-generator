@@ -1,5 +1,5 @@
 // Assignment Code
-
+// console.log(Math.floor(Math.random()*120));
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -13,15 +13,28 @@ function writePassword() {
 
 function generatePassword() {
 
-  var numChars = prompt("How many characters? (must be 8 - 128");
-  while (1) {
-     if (numChars < 8 || numChars > 128) {
-         window.alert("invalid selection");
-         numChars = prompt("How many characters? (must be 8 - 128");
+  var numChars = prompt("How many characters? (must be 8 - 128)");
+  for (var i = 0; i < 3; i++) {
+
+    if (i === 2) {
+      numChars = Math.floor(Math.random()*12);
+      window.alert("You're obviously not taking this seriously. I'm picking for you. You're getting " +
+        numChars + " whether you like it or not!");
+      
+      
+    }
+    else if (numChars < 8 || numChars > 128) {
+        //  window.alert("invalid selection");
+         numChars = prompt("Invalid selection. Lets try this again. How many characters? (must be 8 - 128)");
      }
-  else break;
+     else break;
+  
+
+ 
   
  }
+
+
  console.log(numChars);
  while (1) {
   var special = window.confirm("Include special characters?");
