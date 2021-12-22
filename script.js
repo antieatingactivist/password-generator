@@ -36,13 +36,24 @@ function generatePassword() {
 
 
  console.log(numChars);
- while (1) {
+ for (var i = 0; i < 3; i++) {
   var special = window.confirm("Include special characters?");
   var numbers = window.confirm("... Numeric charachers?");
   var uppercase = window.confirm("... Uppercase letters?");
   var lowercase = window.confirm("... or Lowercase characters?");
   
-  if (special || numbers || uppercase || lowercase) {
+  
+  
+  if (i === 2) {
+    
+    window.alert("Oh come on!!!!! You get all special characters #%*(!!!");
+    special = true;
+    
+    
+  }
+
+  
+  else if (special || numbers || uppercase || lowercase) {
     console.log("!!!!");
     break;
   }
