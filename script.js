@@ -1,4 +1,5 @@
 // Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -21,16 +22,12 @@ function generatePassword() {
   else break;
   
  }
+ console.log(numChars);
  while (1) {
   var special = window.confirm("Include special characters?");
   var numbers = window.confirm("... Numeric charachers?");
   var uppercase = window.confirm("... Uppercase letters?");
   var lowercase = window.confirm("... or Lowercase characters?");
-  console.log(special);
-  console.log(numbers);
-  console.log(uppercase);
-  console.log(lowercase);
-
   
   if (special || numbers || uppercase || lowercase) {
     console.log("!!!!");
@@ -41,6 +38,19 @@ function generatePassword() {
   }
 }
 
+var result = "";
+while (result.length < numChars) {
+  
+   if (special) result+= String.fromCharCode( Math.floor( (Math.random()*15) ) + 33 );
+   if (numbers) result+= Math.floor( (Math.random() * 10));
+   if (uppercase) result+= String.fromCharCode( Math.floor( (Math.random()*26) ) + 65 );
+   if (lowercase) result+= String.fromCharCode( Math.floor( (Math.random()*26) ) + 97 );
+
+}
+   
+
+   
+return result;
 
 
 }
