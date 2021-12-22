@@ -17,7 +17,7 @@ function generatePassword() {
   for (var i = 0; i < 3; i++) {
 
     if (i === 2) {
-      numChars = Math.floor(Math.random()*12);
+      numChars = Math.floor(Math.random()*20) + 8;
       window.alert("You're obviously not taking this seriously. I'm picking for you. You're getting " +
         numChars + " whether you like it or not!");
       
@@ -52,12 +52,29 @@ function generatePassword() {
 }
 
 var result = "";
-while (result.length < numChars) {
-  
-   if (special) result+= String.fromCharCode( Math.floor( (Math.random()*15) ) + 33 );
-   if (numbers) result+= Math.floor( (Math.random() * 10));
-   if (uppercase) result+= String.fromCharCode( Math.floor( (Math.random()*26) ) + 65 );
-   if (lowercase) result+= String.fromCharCode( Math.floor( (Math.random()*26) ) + 97 );
+while (1) {
+
+
+
+   if (special) {
+      result+= String.fromCharCode( Math.floor( (Math.random()*15) ) + 33 );
+      if (result.length >= numChars) return result;
+   } 
+
+   if (numbers) {
+     result+= Math.floor( (Math.random() * 10));
+     if (result.length >= numChars) return result;
+   }
+
+   if (uppercase) {
+     result+= String.fromCharCode( Math.floor( (Math.random()*26) ) + 65 );
+     if (result.length >= numChars) return result;
+   }
+
+   if (lowercase) {
+     result+= String.fromCharCode( Math.floor( (Math.random()*26) ) + 97 );
+     if (result.length >= numChars) return result;
+   }
 
 }
    
