@@ -38,6 +38,6 @@ This application is capable of generating a password up to 128 characters in len
 
 Garrett Corbin
 
-- [https://antieatingactivist.github.io/securifier/](https://antieatingactivist.github.io/password-generator/)
+- [https://antieatingactivist.github.io/securifier/](https://antieatingactivist.github.io/securifier/)
 - [https://github.com/antieatingactivist/](https://github.com/)
 - [https://www.linkedin.com/in/garrett-corbin-7a7777227/](https://www.linkedin.com/)
