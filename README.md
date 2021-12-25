@@ -1,7 +1,7 @@
-# password-generator
+# The Securifier 
 
 
-## https://antieatingactivist.github.io/password-generator/
+## https://antieatingactivist.github.io/securifier/
 
 This application is capable of generating a password up to 128 characters in length using regular, capital, number, and special characters. This uses various javascript features such as:
 
@@ -31,13 +31,13 @@ This application is capable of generating a password up to 128 characters in len
 
 ## Deployed Link
 
-* [https://antieatingactivist.github.io/portfolio/](https://antieatingactivist.github.io/password-generator/)
+* [https://antieatingactivist.github.io/securifier/](https://antieatingactivist.github.io/securifier/)
 
 
 ## Authors
 
 Garrett Corbin
 
-- [https://antieatingactivist.github.io/password-generator/](https://antieatingactivist.github.io/password-generator/)
+- [https://antieatingactivist.github.io/securifier/](https://antieatingactivist.github.io/password-generator/)
 - [https://github.com/antieatingactivist/](https://github.com/)
 - [https://www.linkedin.com/in/garrett-corbin-7a7777227/](https://www.linkedin.com/)
