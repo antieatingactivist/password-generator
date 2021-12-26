@@ -48,7 +48,7 @@ function generatePassword() {
 
   for (var i = 0; i < 3; i++) {
     var special = window.confirm("Include special characters?");
-    var numbers = window.confirm("... Numeric charachers?");
+    var numbers = window.confirm("... Numeric characters?");
     var uppercase = window.confirm("... Uppercase letters?");
     var lowercase = window.confirm("... or Lowercase characters?");
     
