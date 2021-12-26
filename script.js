@@ -8,6 +8,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  passwordText.style.backgroundImage = "none";
+  passwordText.style.opacity = ".8";
 
 }
 
@@ -76,25 +78,25 @@ function generatePassword() {
                  //generate a random number, mult by 15, round decimal down, end up with a random number 0-15. 
                  //the span of special characters i'm using is 15. add 33 and then convert 
                  // the result to ASCII giving us a posibilty of 15 special characters                
-        result+= String.fromCharCode( Math.floor( (Math.random()*15) ) + 33 );
+        result += String.fromCharCode( Math.floor( (Math.random()*15) ) + 33 );
         if (result.length >= numChars) return result;
     } 
 
     if (numbers) {
                 // generates a number 0-9
-      result+= Math.floor( (Math.random() * 10));
+      result += Math.floor( (Math.random() * 10));
       if (result.length >= numChars) return result;
     }
 
     if (uppercase) {
               // same as Special chars, but we move the ASCII index to 65 where the uppercase letters are.
-      result+= String.fromCharCode( Math.floor( (Math.random()*26) ) + 65 );
+      result += String.fromCharCode( Math.floor( (Math.random()*26) ) + 65 );
       if (result.length >= numChars) return result;
     }
 
     if (lowercase) {
               // move ASCII index to 97
-      result+= String.fromCharCode( Math.floor( (Math.random()*26) ) + 97 );
+      result += String.fromCharCode( Math.floor( (Math.random()*26) ) + 97 );
       if (result.length >= numChars) return result;
     }
 
