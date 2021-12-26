@@ -18,9 +18,9 @@ This application is capable of generating a password up to 128 characters in len
 ` prompt("Invalid selection. Lets try this again. How many characters? (must be 8 - 128)"); `
 
 
+![animation](https://user-images.githubusercontent.com/1414728/147399383-e7e55a14-4bda-4ad0-87af-b4025675f994.gif)
 
 
-![gif](https://user-images.githubusercontent.com/1414728/147059280-08c3897a-217a-4fa8-81cc-12edbf93608e.gif)
 
 
 ## Built With
